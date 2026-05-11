@@ -3,7 +3,8 @@ import DashboardTab from './components/DashboardTab';
 import AlertsTab from './components/AlertsTab';
 import SettingsTab from './components/SettingsTab';
 import QuickActionsTab from './components/QuickActionsTab';
-import { Shield, LayoutDashboard, Bell, BarChart2, Settings, Zap } from 'lucide-react';
+import LinkCheckerTab from './components/LinkCheckerTab';
+import { Shield, LayoutDashboard, Bell, BarChart2, Settings, Zap, Link2 } from 'lucide-react';
 import { fetchDashboardData, WS_URL } from './services/api';
 import './index.css';
 
@@ -11,7 +12,7 @@ const NAV_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { id: 'alerts',    label: 'Alerts',    icon: Bell },
   { id: 'quick',     label: 'Quick',     icon: Zap },
-  { id: 'analytics', label: 'Analytics', icon: BarChart2 },
+  { id: 'links',     label: 'Links',     icon: Link2 },
   { id: 'settings',  label: 'Settings',  icon: Settings },
 ];
 
@@ -186,11 +187,7 @@ function App() {
         {activeTab === 'dashboard' && <DashboardTab stats={stats} alerts={alerts} />}
         {activeTab === 'alerts'    && <AlertsTab alerts={alerts} stats={stats} />}
         {activeTab === 'quick'     && <QuickActionsTab />}
-        {activeTab === 'analytics' && (
-          <div className="glass-panel flex items-center justify-center text-gray-500 min-h-[400px]">
-            Analytics Module (Coming Soon)
-          </div>
-        )}
+        {activeTab === 'links'     && <LinkCheckerTab />}
         {activeTab === 'settings' && (
           <SettingsTab
             savedSettings={savedSettings}

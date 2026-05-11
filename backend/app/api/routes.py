@@ -5,6 +5,7 @@ import logging
 
 from app.prevention.ip_blocker import IPBlocker
 from app.voice_assistant.command_processor import ServerVoiceAssistant
+from app.api.link_checker import router as link_router
 
 logger = logging.getLogger(__name__)
 api_router = APIRouter()
@@ -44,3 +45,6 @@ def process_voice_command(command: VoiceCommand):
     except Exception as e:
         logger.error(f"Voice processing error: {e}")
         raise HTTPException(status_code=500, detail="Failed to process voice command.")
+
+
+api_router.include_router(link_router)
