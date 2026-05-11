@@ -1,0 +1,81 @@
+# ===== Environment & Secrets =====
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.venv/
+venv/
+env/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+*.sqlite3
+
+# ===== Node / Frontend =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+
+# ===== Build Outputs =====
+frontend/dist/
+frontend/build/
+backend/dist/
+backend/build/
+
+# ===== IDE & Editors =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== Docker =====
+*.log
+docker-compose.override.yml
+
+# ===== ML / Data =====
+*.h5
+*.pkl
+*.joblib
+*.model
+*.onnx
+datasets/
+models/
+*.csv
+!requirements.txt
+
+# ===== Misc =====
+*.bak
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
