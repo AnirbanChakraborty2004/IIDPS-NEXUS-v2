@@ -1,0 +1,111 @@
+# =========================
+# React / Node.js
+# =========================
+
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Cache
+frontend/.cache/
+frontend/.vite/
+
+# =========================
+# FastAPI / Python
+# =========================
+
+# Python cache
+backend/__pycache__/
+backend/*.py[cod]
+
+# Virtual Environment
+backend/venv/
+backend/env/
+
+# Environment variables
+backend/.env
+
+# Logs
+backend/*.log
+
+# Database
+backend/*.db
+backend/*.sqlite3
+
+# Pytest
+backend/.pytest_cache/
+
+# Mypy
+backend/.mypy_cache/
+
+# Coverage reports
+backend/htmlcov/
+backend/.coverage
+
+# =========================
+# VS Code / IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# OS Files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary Files
+# =========================
+
+*.tmp
+*.swp
+
+# =========================
+# Secrets / Keys
+# =========================
+
+*.pem
+*.key
+
+# =========================
+# Uploads / Media
+# =========================
+
+uploads/
+media/
+
+# =========================
+# ML Models (Optional)
+# =========================
+
+*.h5
+*.pth
+*.pt
+
+# =========================
+# Docker
+# =========================
+
+docker-compose.override.yml
+
+# =========================
+# Build Artifacts
+# =========================
+
+dist/
+build/
